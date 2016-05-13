@@ -59,5 +59,5 @@ set scrolloff=10
 set nohlsearch
 nmap // <leader>ci
 nmap '' <leader>ig
-"nmap ] G
-"nmap [ gg
+nmap ] G
+nmap [ gg
