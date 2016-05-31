@@ -1,9 +1,3 @@
-if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall
-endif
-
 call plug#begin()
 Plug 'Wombat'
 Plug 'tomasr/molokai'
@@ -22,13 +16,12 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'davidhalter/jedi-vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
 syntax enable
-"colorscheme jellybeans  
-set background=light
-colorscheme solarized
+colorscheme molokai 
 let g:airline_powerline_fonts = 1
 let g:airline_theme='cool'
 
@@ -49,8 +42,9 @@ hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
 
 if has('gui_running')
-    set guifont=Meslo\ LG\ M\ DZ\ for\ Powerline\ 10
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Bold\ Oblique\ 10
 endif
+
 set incsearch
 set autoindent
 set ignorecase
