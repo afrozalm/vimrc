@@ -1,4 +1,7 @@
 # vimrc
+
+![ alt tag ](https://github.com/afrozalm/vimrc/blob/master/how-it-looks.png)
+
 ## Prerequisites
 * [ vim-plug ]( https://github.com/junegunn/vim-plug )
 * Powerline Fonts
