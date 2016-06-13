@@ -52,6 +52,6 @@ set laststatus=2
 set scrolloff=10
 set nohlsearch
 nmap // <leader>ci
-nmap '' <leader>ig
 nmap ] G
 nmap [ gg
+nmap <S-Enter> i<Enter><Esc><k>
