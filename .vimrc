@@ -21,7 +21,11 @@ Plug 'flazz/vim-colorschemes'
 call plug#end()
 
 syntax enable
-colorscheme molokai 
+if has('gui_running')
+    colorscheme molokai                 "for gvim
+else
+    colorscheme jellybeans              "for vim via terminal
+endif
 let g:airline_powerline_fonts = 1
 let g:airline_theme='cool'
 
