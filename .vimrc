@@ -17,14 +17,15 @@ Plug 'davidhalter/jedi-vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 
 syntax enable
 if has('gui_running')
-    colorscheme molokai                 "for gvim
+    colorscheme jellybeans 
 else
-    colorscheme jellybeans              "for vim via terminal
+    colorscheme jellybeans
 endif
 let g:airline_powerline_fonts = 1
 let g:airline_theme='cool'
@@ -46,7 +47,7 @@ hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
 
 if has('gui_running')
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Bold\ Oblique\ 10
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Bold\ Oblique\ 9
 endif
 
 set incsearch
@@ -58,4 +59,5 @@ set nohlsearch
 nmap // <leader>ci
 nmap ] G
 nmap [ gg
-nmap <S-Enter> i<Enter><Esc><k>
+nmap <S-Enter> i<Enter><Esc><k><Esc>
+nmap '' :TagbarToggle<CR>
