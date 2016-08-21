@@ -61,3 +61,5 @@ nmap ] G
 nmap [ gg
 nmap <S-Enter> i<Enter><Esc><k><Esc>
 nmap '' :TagbarToggle<CR>
+nmap <A-left> :tabprevious<CR>
+nmap <A-right> :tabnext<CR>
