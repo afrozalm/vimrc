@@ -47,7 +47,7 @@ hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
 
 if has('gui_running')
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Bold\ Oblique\ 9
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Bold\ Oblique\ 10
 endif
 
 set incsearch
@@ -56,10 +56,11 @@ set ignorecase
 set laststatus=2
 set scrolloff=10
 set nohlsearch
-nmap // <leader>ci
-nmap ] G
-nmap [ gg
-nmap <S-Enter> i<Enter><Esc><k><Esc>
-nmap '' :TagbarToggle<CR>
-nmap <A-left> :tabprevious<CR>
-nmap <A-right> :tabnext<CR>
+nmap //         <leader>ci
+nmap ]          G
+nmap [          gg
+nmap <S-Enter>  i<Enter><Esc><k><Esc>
+nmap ''         :TagbarToggle<CR>
+nmap <A-left>   :tabprevious<CR>
+nmap <A-right>  :tabnext<CR>
+nmap <C-t>      :tabnew
