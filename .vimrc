@@ -1,5 +1,6 @@
 call plug#begin()
 Plug 'Wombat'
+Plug 'tpope/vim-surround'
 Plug 'tomasr/molokai'
 Plug 'nanotech/jellybeans.vim' 
 Plug 'scrooloose/nerdcommenter'
@@ -18,6 +19,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'flazz/vim-colorschemes'
 Plug 'majutsushi/tagbar'
+Plug 'nikvdp/ejs-syntax'
 
 call plug#end()
 
@@ -32,9 +34,6 @@ let g:airline_theme='cool'
 
 set t_Co=256
 
-set number
-set relativenumber
-
 filetype plugin indent on
 set tabstop=4
 set softtabstop=4
@@ -47,7 +46,7 @@ hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
 
 if has('gui_running')
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Bold\ Oblique\ 10
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Bold\ Oblique\ 11
 endif
 
 set incsearch
@@ -63,4 +62,4 @@ nmap <S-Enter>  i<Enter><Esc><k><Esc>
 nmap ''         :TagbarToggle<CR>
 nmap <A-left>   :tabprevious<CR>
 nmap <A-right>  :tabnext<CR>
-nmap <C-t>      :tabnew
+nmap <C-t>      :tabnew 
